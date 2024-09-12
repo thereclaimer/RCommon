@@ -1,8 +1,8 @@
 #ifndef R_COMMON_SCOPES_HPP
 #define R_COMMON_SCOPES_HPP
 
-#define internal static
-#define local    static
-#define global   static
+#define r_internal static
+#define r_local    static
+#define r_global   static
  
 #endif //R_COMMON_SCOPES_HPP
