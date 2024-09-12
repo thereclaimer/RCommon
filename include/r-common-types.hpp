@@ -30,6 +30,7 @@ typedef void     r_void;
 typedef void*    r_handle;
 typedef uint8_t  r_byte;
 typedef uint8_t* r_memory;
+typedef size_t   r_size;
 typedef intptr_t r_address;
 
 #endif //R_COMMON_TYPES_HPP
