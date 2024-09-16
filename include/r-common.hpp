@@ -4,5 +4,6 @@
 #include "r-common-macros.hpp"
 #include "r-common-scopes.hpp"
 #include "r-common-types.hpp"
+#include "r-common-platform.hpp"
 
 #endif //R_COMMON_HPP
