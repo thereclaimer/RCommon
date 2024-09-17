@@ -15,6 +15,10 @@ typedef uint16_t r_u16;
 typedef uint32_t r_u32;
 typedef uint64_t r_u64;
 
+//floats
+typedef float  r_f32;
+typedef double r_f64;
+
 //booleans
 typedef int8_t  r_b8;
 typedef int16_t r_b16;
