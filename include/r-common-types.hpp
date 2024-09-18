@@ -38,4 +38,7 @@ typedef size_t   r_size;
 typedef size_t   r_index;
 typedef intptr_t r_address;
 
+//time
+typedef uint64_t r_timems;
+
 #endif //R_COMMON_TYPES_HPP
