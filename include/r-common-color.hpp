@@ -60,8 +60,58 @@ struct RColor32BitNormalized {
 
 namespace r_common {
 
-    
+    inline RColor32Bit 
+    color_32_bit_create(
+        const RColorFormat color_format,
+        const r_byte       red,
+        const r_byte       green,
+        const r_byte       blue,
+        const r_byte       alpha) {
 
+        RColor32Bit color_32;
+        color_32.format = color_format;
+
+        switch (color_32.format) {
+
+            case RColorFormat_RGBA: {
+
+                color_32.rgba.r = red;
+                color_32.rgba.g = green;
+                color_32.rgba.b = blue;
+                color_32.rgba.a = alpha;
+
+            } break;
+
+            case RColorFormat_ARGB: {
+
+                color_32.argb.r = red;
+                color_32.argb.g = green;
+                color_32.argb.b = blue;
+                color_32.argb.a = alpha;
+
+            } break;
+
+            case RColorFormat_ABGR: {
+
+                color_32.abgr.r = red;
+                color_32.abgr.g = green;
+                color_32.abgr.b = blue;
+                color_32.abgr.a = alpha;
+
+            } break;
+
+            case RColorFormat_BGRA: {
+
+                color_32.bgra.r = red;
+                color_32.bgra.g = green;
+                color_32.bgra.b = blue;
+                color_32.bgra.a = alpha;
+
+            }  break;
+        }
+
+        return(color_32);
+    }    
 };
 
 #endif //R_COMMON_COLOR_HPP
